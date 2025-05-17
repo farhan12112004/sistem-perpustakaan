@@ -6,6 +6,7 @@
     <title>Login - Sistem Perpustakaan</title>
    <link rel="stylesheet" href="{{ asset('build/assets/app.css') }}">
 <script src="{{ asset('build/assets/app.js') }}" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
      <script>
