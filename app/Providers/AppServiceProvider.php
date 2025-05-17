@@ -23,5 +23,9 @@ class AppServiceProvider extends ServiceProvider
         strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
         \URL::forceScheme('https');
     }
+    config([
+        'database.connections.mysql.host' => env('DB_HOST'),
+        'database.connections.mysql.port' => env('DB_PORT')
+    ]);
     }
 }
