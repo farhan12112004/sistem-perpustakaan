@@ -6,7 +6,7 @@
 
     <!-- Main Content -->
     <div class="flex-1 p-4 sm:p-6">
-        <h1 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center sm:text-left">Sistem Informasi Perpustakaan</h1>
+        <h1 class="text-xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center sm:text-left">Halo Admin, Selamat Datang 👋🏻</h1>
 
         <!-- Cards -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
