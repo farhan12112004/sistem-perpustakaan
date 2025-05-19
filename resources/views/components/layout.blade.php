@@ -83,18 +83,18 @@
 
     <!-- Mobile Menu -->
    <ul id="mobile-menu" class="hidden lg:hidden absolute bg-gray-900 rounded-xl opacity-90 w-64 h-full right-0 shadow-lg z-10 py-6 px-6 space-y-2 text-lg border-t font-semibold text-white border-gray-200">
-        <li><a href="{{ route('dashboard') }}" class="block hover:text-blue-500 pb-3">Dashboard</a></li>
-        <li><a href="{{ route('index.buku') }}" class="block hover:text-blue-500 pb-3">Buku</a></li>
-        <li><a href="{{ route('index.anggota') }}" class="block hover:text-blue-500 pb-3">Anggota</a></li>
-        <li><a href="{{ route('index.transaksi') }}" class="block hover:text-blue-500 pb-3">Transaksi</a></li>
-        <li><a href="{{ route('transaksi.cetak') }}" target="_blank" class="block hover:text-blue-500 pb-3">Laporan Transaksi</a></li>
-        <li><a href="{{ route('anggota.cetak') }}" target="_blank" class="block hover:text-blue-500 pb-5">Laporan Anggota</a></li>
+        <li><a href="{{ route('dashboard') }}" class="block hover:text-blue-500 pb-3"><i class="fa-solid fa-house px-3 py-auto"></i>Dashboard</a></li>
+        <li><a href="{{ route('index.buku') }}" class="block hover:text-blue-500 pb-3"><i class="fa-solid fa-book px-3 py-auto"></i>Buku</a></li>
+        <li><a href="{{ route('index.anggota') }}" class="block hover:text-blue-500 pb-3"><i class="fa-solid fa-user px-3 py-auto"></i>Anggota</a></li>
+        <li><a href="{{ route('index.transaksi') }}" class="block hover:text-blue-500 pb-3"><i class="fa-solid fa-exchange-alt px-3 py-auto"></i>Transaksi</a></li>
+        <li><a href="{{ route('transaksi.cetak') }}" target="_blank" class="block hover:text-blue-500 pb-3"><i class="fa-solid fa-file-alt px-3 py-auto"></i>Laporan Transaksi</a></li>
+        <li><a href="{{ route('anggota.cetak') }}" target="_blank" class="block hover:text-blue-500 pb-5"><i class="fa-solid fa-file-alt px-3 py-auto"></i>Laporan Anggota</a></li>
         <li>
             
             <form action="{{ route('logout') }}" method="POST" class="block">
                 @csrf
                 <div class="text-center">
-  <button class="bg-red-500 text-white px-4 py-2 rounded mt-6 transform transition-all duration-300 ease-in-out hover:bg-red-600 hover:scale-105">Logout</button>
+  <button class="bg-red-500 text-white px-4 py-2 rounded mt-6 transform transition-all duration-300 ease-in-out hover:bg-red-600 hover:scale-105"><i class="fa-solid fa-sign-out-alt px-3 py-auto"></i>Logout</button>
 </div>
             </form>
         </li>

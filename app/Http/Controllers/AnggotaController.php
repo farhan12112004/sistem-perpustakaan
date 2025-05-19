@@ -10,17 +10,16 @@ class AnggotaController extends Controller
 {
     // Menampilkan semua anggota
     public function index(Request $request)
-    {
-        $query = Anggota::query();
+{
+    $search = $request->search;
 
-        if ($request->filled('search')) {
-            $query->where('nama', 'like', '%' . $request->search . '%');
-        }
+    $anggotas = Anggota::when($search, function ($query, $search) {
+        return $query->where('nama', 'like', "%{$search}%");
+    })->get();
 
-        $anggotas = $query->latest()->get();
+    return view('daftaranggota', compact('anggotas'));
+}
 
-        return view('daftaranggota', compact('anggotas'));
-    }
     
 
     // Menampilkan form tambah anggota
@@ -46,8 +45,10 @@ class AnggotaController extends Controller
     }
 
     // Menampilkan form edit anggota
-    public function edit(Anggota $anggota)
+    public function edit(string $id)
     {
+        $anggota = Anggota::find($id);
+
         return view('editanggota', compact('anggota'));
     }
 

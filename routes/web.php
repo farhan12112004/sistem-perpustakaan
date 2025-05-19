@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [AnggotaController::class, 'index'])->name('index.anggota');
         Route::get('/create', [AnggotaController::class, 'create'])->name('create.anggota');
         Route::post('/create', [AnggotaController::class, 'store'])->name('store.anggota');
-        Route::get('/edit/{anggota}', [AnggotaController::class, 'edit'])->name('edit.anggota');
+        Route::get('/edit/{id}', [AnggotaController::class, 'edit'])->name('edit.anggota');
         Route::put('/edit/{anggota}', [AnggotaController::class, 'update'])->name('update.anggota');
         Route::delete('/{anggota}', [AnggotaController::class, 'destroy'])->name('delete.anggota');
         Route::get('/cetakanggota', [AnggotaController::class, 'cetakAnggota'])->name('anggota.cetak');
